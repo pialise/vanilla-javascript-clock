@@ -1,0 +1,101 @@
+body {
+	background: grey;
+}
+
+
+
+.outerclock {
+	box-sizing: border-box;
+	height: 340px;
+	width: 340px;
+	margin: 0 auto;
+	margin-top: 40px;
+	border: 40px solid black;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+}
+
+.secondticker {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: orangered;
+  top: 115px;
+  left: 115px;
+  position: absolute;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+  z-index: 2;
+}
+
+.secondticker:before {
+  content: "";
+	box-sizing: border-box;
+	background-color: orangered;
+	height: 6px;
+	width: 120px;
+	border-radius: 5px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+/*.secondticker:hover {
+	transform: rotate(90deg);
+	transform-origin: center;
+}*/
+.minuteticker {
+	height: 42px;
+	width: 42px;
+	border-radius: 320px;
+	background-color: darkorange;
+	top: 109px;
+	left: 109px;
+	position: absolute;
+	transition-duration: 2s;
+}
+.minuteticker:before {
+    content: "";
+	box-sizing: border-box;
+	background-color: darkorange;
+	height: 10px;
+	width: 110px;
+	border-radius: 7px;
+	position: absolute;
+	top: 14px;
+	left: 14px;
+}
+/*
+.minuteticker:hover {
+	transform: rotate(180deg);
+	transform-origin: center;
+}*/
+
+
+.hourticker {
+  height: 62px;
+  width: 62px;
+  border-radius: 420px;
+  background-color: firebrick;
+  top: 99px;
+  left: 99px;
+  position: absolute;
+	transition-duration: 2s;
+}
+.hourticker:before {
+  content: "";
+	box-sizing: border-box;
+	background-color: firebrick;
+	height: 18px;
+	width: 100px;
+	border-radius: 13px;
+	position: absolute;
+	top: 20px;
+	left: 14px;
+}
+/*
+.hourticker:hover {
+	transform: rotate(270deg);
+	transform-origin: center;
+}*/
+
